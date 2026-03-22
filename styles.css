@@ -1,0 +1,147 @@
+/* Configurações básicas para zerar margens e definir fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Usando uma fonte sem serifa para parecer com a imagem */
+}
+
+/* Centraliza o formulário na tela e define a cor de fundo cinza claro */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Cor de fundo da página */
+}
+
+/* Estiliza o container branco do formulário (o <main>) */
+main {
+    background-color: #ffffff;
+    padding: 2.5rem; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 450px; /* Largura máxima do formulário */
+}
+
+/* Centraliza o título */
+h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Espaço abaixo do título */
+    color: #333;
+}
+
+/* Faz com que o formulário ocupe toda a largura do container */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estiliza os labels (textos acima dos campos) */
+label {
+    margin-bottom: 0.5rem; /* Espaço entre o label e o input */
+    font-weight: bold; /* Texto em negrito */
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Estiliza todos os campos de entrada (input text e number) */
+input[type="text"],
+input[type="number"] {
+    padding: 0.75rem; /* Espaçamento interno para o texto não ficar colado na borda */
+    margin-bottom: 1.25rem; /* Espaço entre cada campo */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos*/
+}
+
+/* Botão azul vibrante */
+button[type="submit"] {
+    background-color: #007bff !important; /* Azul destacado */
+    color: white !important;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button[type="submit"]:hover {
+    background-color: #0056b3 !important;
+}
+
+/* Ajuste fino nos inputs para ficarem mais visíveis */
+input {
+    border: 1px solid #ccc !important;
+    padding: 10px !important;
+    border-radius: 4px !important;
+}
+
+
+/*tema dark*/
+
+
+#botaoTema {
+    /* Posicionamento */
+    position: absolute;
+    top: 15px;
+    right: 15px; /* Coloquei na direita para não chocar com o título centralizado */
+    
+    /* Tamanho e Forma */
+    width: 50px;
+    height: 30px;
+    border-radius: 20%; /* Redondinho */
+    
+    /* Cores e Bordas */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #555;
+    
+    /* Alinhamento do conteúdo (o asterisco ou ícone) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+    /* Interação */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Efeito ao passar o mouse */
+#botaoTema:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff; /* Brilho azul combinando com o botão principal */
+    color: #007bff;
+    transform: translateY(-2px); /* Leve levantada */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.dark {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark main {
+    background-color: #4f4d4d;
+    color: #ffffff;
+}
+
+body.dark form {
+    background-color: #4f4d4d;
+    color: #ffffff;
+}
+
+body.dark h2 {
+    color: #ffffff;
+}
+
+body.dark label {
+    color: #ffffff;
+}
